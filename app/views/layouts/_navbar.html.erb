@@ -10,7 +10,12 @@
 
 
       <!-- Login link (when logged out) -->
-
+      <%= link_to restaurants_path do %>
+      <i class="fas fa-utensils"></i> See All Restaurants</div>
+      <% end %>
+      <%= link_to new_restaurant_path do %>
+      <i class="fas fa-plus"></i> Add Restaurant</div>
+      <% end %>
 
   </div>
 
@@ -19,6 +24,7 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+
         <li><a href="#">Some mobile link</a></li>
         <li><a href="#">Other one</a></li>
         <li><a href="#">Other one</a></li>

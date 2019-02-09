@@ -19,6 +19,8 @@ class RestaurantsController < ApplicationController
   end
 
   def show
+    @reviews = Review.where(restaurant_id: @restaurant)
+    @review = Review.new
   end
 
   def edit
