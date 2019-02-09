@@ -29,6 +29,7 @@ class RestaurantsController < ApplicationController
       redirect_to restaurant_path(@restaurant)
     else
       render :edit
+    end
   end
 
   def destroy
@@ -44,4 +45,5 @@ class RestaurantsController < ApplicationController
 
   def restaurant_params
     params.require(:restaurant).permit(:name, :address, :phone_number, :category)
+  end
 end

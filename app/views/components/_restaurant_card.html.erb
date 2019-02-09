@@ -1,0 +1,21 @@
+<div class="col-xs-6 col-md-4">
+  <%= link_to restaurant_path(restaurant) do %>
+    <div class="restaurant_card">
+      <h3><%= restaurant.name %></h3>
+      <p>
+        <i class="fas fa-utensils"></i> <%= restaurant.category %>
+      </p>
+      <p>
+        <i class="fas fa-phone"></i> <%= restaurant.phone_number %>
+      </p>
+      <p>
+        <i class="fas fa-map-marker-alt"></i> <%= restaurant.address %>
+      </p>
+      <%= link_to edit_restaurant_path(restaurant) do %><button id="edit"><i class="far fa-edit"></i> Edit</button>
+      <% end %>
+      <%= link_to restaurant_path(restaurant), method: :delete do %>
+      <button id="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      <% end %>
+    </div>
+  <% end %>
+</div>

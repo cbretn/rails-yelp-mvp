@@ -1,2 +1,8 @@
-<h1>Restaurants#show</h1>
-<p>Find me in app/views/restaurants/show.html.erb</p>
+<%= link_to restaurants_path do %>
+  <p><i class="fas fa-arrow-circle-left"></i> back to all</p>
+  <% end %>
+<h2><%= @restaurant.name %> Information</h2>
+  <div class="row">
+  <%= render "./components/restaurant_card", restaurant: @restaurant %>
+  </div>
+<h3>Reviews</h3>

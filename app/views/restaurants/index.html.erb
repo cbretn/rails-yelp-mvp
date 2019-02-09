@@ -1,2 +1,12 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<h1>All Restaurants</h1>
+  <div class="restaurant_card_container">
+    <div class="row">
+      <% @restaurants.each do |restaurant| %>
+        <%= render "./components/restaurant_card", restaurant: restaurant %>
+      <% end %>
+  </div>
+</div>
+
+<%= link_to new_restaurant_path do %>
+<div class="btn btn-primary" id="add-button"><i class="fas fa-plus"></i> Add Restaurant</div>
+<% end %>

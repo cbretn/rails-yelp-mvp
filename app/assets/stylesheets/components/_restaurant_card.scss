@@ -1,0 +1,49 @@
+.restaurant_card_container {
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+
+.restaurant_card {
+  border: 1px #d3d3d3 solid;
+  background-color: white;
+  // margin: 15px;
+  height: 300px;
+  padding: 10px 40px;
+}
+
+.restaurant_card h3 {
+  text-align: center;
+}
+
+.restaurant_card p {
+  color: black;
+  // margin-left: 20%;
+  position: relative;
+}
+
+#edit {
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  color: white;
+  background-color: orange;
+}
+
+#delete {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  color: white;
+  background-color: purple;
+}
+
+
+.restaurant_card_container .row {
+  // display: flex;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
